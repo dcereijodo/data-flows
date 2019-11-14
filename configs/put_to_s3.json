@@ -1,0 +1,4 @@
+{
+  "bucket_name": "${AIRFLOW_AUX_BUCKET}",
+  "buffer_size": 500
+}

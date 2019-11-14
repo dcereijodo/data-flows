@@ -1,0 +1,16 @@
+{
+  "redshift_host": "${RS_HOST}",
+  "redshift_port": 5439,
+  "redshift_database": "dwh",
+  "redshift_username": "airflow",
+  "redshift_password": "${RS_PWD}",
+  "redshift_schema": "pmt_catalog",
+  "default_column_length": 1000,
+  "persist_empty_tables": true,
+  "target_s3": {
+    "aws_access_key_id": "${AWS_KEY}",
+    "aws_secret_access_key": "${AWS_SECRET}",
+    "bucket": "${AIRFLOW_AUX_BUCKET}",
+    "key_prefix": "target-redshift/__tmp"
+  }
+}
